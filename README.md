@@ -11,6 +11,8 @@ The primary goal of this project is to assess the effectiveness of deep learning
 2. Efficiency: How do these models impact diagnostic processes in terms of time and resource utilization when compared to traditional diagnostic methods?
 3. Challenges in Clinical Integration: What challenges are encountered when integrating these models into clinical settings, and how can they be addressed?
 
+![ss](Screenshot 2025-02-07 150625.png)
+
 ## Data Acquisition and Preprocessing
 - Dataset: The study uses the NIH Chest X-ray dataset, which includes over 112,000 frontal-view X-ray images from 30,805 patients, covering 14 thoracic pathologies like Atelectasis, Consolidation, and Pneumothorax.
 - Preprocessing: The data was cleaned by aligning images with disease labels, removing irrelevant or corrupted images, resizing to 224x224 pixels, and normalizing pixel values.
