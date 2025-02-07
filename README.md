@@ -11,8 +11,6 @@ The primary goal of this project is to assess the effectiveness of deep learning
 2. Efficiency: How do these models impact diagnostic processes in terms of time and resource utilization when compared to traditional diagnostic methods?
 3. Challenges in Clinical Integration: What challenges are encountered when integrating these models into clinical settings, and how can they be addressed?
 
-![ss](Screenshot 2025-02-07 150625.png)
-
 ## Data Acquisition and Preprocessing
 - Dataset: The study uses the NIH Chest X-ray dataset, which includes over 112,000 frontal-view X-ray images from 30,805 patients, covering 14 thoracic pathologies like Atelectasis, Consolidation, and Pneumothorax.
 - Preprocessing: The data was cleaned by aligning images with disease labels, removing irrelevant or corrupted images, resizing to 224x224 pixels, and normalizing pixel values.
@@ -26,9 +24,20 @@ To address the class imbalance in the dataset, a robust data augmentation pipeli
 # Exploratory Data Analysis (EDA)
 The EDA revealed that 'Infiltration' was the most common pathology, with a higher occurrence rate among males for most pathologies.
 
+Count of Pathology by Gender
+![ss](2.png)
+
+Percentage of Male and Female Patients
+![ss](3.png)
+
+Histogram of Patient ages
+![ss](4.png)
+
 ## Model Architecture
 1. VGG19: A deep convolutional network with 19 layers, leveraging small filters and ReLU activation for complex feature extraction. It uses max pooling to reduce dimensions and ends with fully connected layers for classification.
 2. ResNet50: Known for its deeper architecture with residual connections that help in handling vanishing gradients during training.
+
+![ss](1.png)
 
 ## Results
 - VGG19: The model showed variability in performance, with accuracies ranging from 47.46% to 59.71%. The lowest test loss was 1.597.
